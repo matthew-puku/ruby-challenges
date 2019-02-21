@@ -15,9 +15,9 @@ while age.to_i == 0
     puts "uhh, try again. How old are you?"
     age = gets.chomp
 end
-puts "ok"
+
 # Program outputs:
-# "Wow! You are 40 years old. Congratulations!"
+puts "Wow! You are #{age} years old. Congratulations!"
 
 # Beast mode challenge:
 # Ater the above, the program calculates how many years until
@@ -26,3 +26,4 @@ puts "ok"
 # "Wow! You are 40 years old. Congratulations!"
 # The program also outputs:
 # "Tom, in 60 years you will be 100 years old!"
+puts "Tom, in #{100 - age.to_i} years you will be 100 years old!"
