@@ -20,3 +20,4 @@
 * 02_input_output
 * 03_largest_number
 * 04_sum_numbers
+* 05_in_array
