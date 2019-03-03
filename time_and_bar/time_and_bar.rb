@@ -23,7 +23,8 @@ bar = Bar.new([
     Drink.new("Cocktail", 3, 22, 8),
     Drink.new("Water", 2, 6, 0.15),
     Drink.new("Beer", 6, 12, 3),
-    Drink.new("Rum", 0, 20, 6)]) # The main benefit of this overengineering is the ease of adding new items to the menu.
+    Drink.new("Rum", 0, 20, 6),
+    Drink.new("Potato", 0, 5, 1)]) # The main benefit of this overengineering is the ease of adding new items to the menu.
 
 # Write a program that asks the customer for their order.
 #   if they order a drink, add one to the number of drinks you need to make,
