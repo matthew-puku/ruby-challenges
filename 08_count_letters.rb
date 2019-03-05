@@ -12,13 +12,13 @@
 
 def count_letters(string)
   result = {} # Initialise empty hash
-  for i in (0...string.length)
-    character = string[i]
-    if result[character] == nil
+  for i in (0...string.length) # Runs this loop once for every character in the given string
+    character = string[i] # Assigns one character to run comparisons on
+    if result[character] == nil # If there's no entry in our hash, create one that corresponds to the character being compared
       result[character] = 1
-    else
+    else # Otherwise, increment corresponding hash entry.
       result[character] += 1
     end
   end
-  return result # return the hash
+  return result
 end
