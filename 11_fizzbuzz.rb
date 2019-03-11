@@ -40,6 +40,6 @@ def fizzbuzz(number)
     end
 end
 
-for i in (0..100)
+for i in (0..10000)
     puts fizzbuzz(i)
 end

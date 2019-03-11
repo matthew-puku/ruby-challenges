@@ -27,3 +27,4 @@
 * 09_vowels
 * 10_unique
 * 11_fizzbuzz
+* 12_count_words
