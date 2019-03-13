@@ -22,10 +22,30 @@
 # Check your solution by running the tests:
 # ruby tests/13_fibonacci_test.rb
 
-def nthFibonacci(n, fibonacci = [0, 1])
-  if fibonacci.length - 1 < n
-    fibonacci << fibonacci[-1] + fibonacci[-2]
-    nthFibonacci(n, fibonacci)
+
+# Hacky recursion
+# def nthFibonacci(n, fibonacci = [0, 1])
+#   if fibonacci.length - 1 < n
+#     fibonacci << fibonacci[-1] + fibonacci[-2]
+#     nthFibonacci(n, fibonacci)
+#   end
+#   return fibonacci[n]
+# end
+
+# Robust to large, large numbers. Limited to roughly n = 1 million.
+def nthFibonacci(n)
+  if n <= 1
+    return n
   end
-  return fibonacci[n]
+  sequence = [0, 1]
+  (n - 1).times do
+    sequence << sequence[0] + sequence[1]
+    # puts sequence[-1]
+    sequence.shift
+    # puts sequence
+  end
+  
+  return sequence[1]
 end
+
+puts nthFibonacci(1000000)
