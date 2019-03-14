@@ -15,41 +15,41 @@
 # Check your solution by running:
 # ruby 14_hackerman.rb
 
-
-
-# Your code here
-
-def grabinput # gets input and splits it into an array for comparison purposes
-    puts "Please type some words."
-    input = gets.chomp.downcase
-    system("clear") # clear for security purposes
-    words = input.downcase.split(" ")
-    return words
-end
-
-def protect_vs_hackerman(first_input, second_input)
-    output = []
-    for word in first_input
-        if second_input.include? word
-            output << "HIDDEN"
-        else
-            output << word
-        end
-    end
-    return output
-end
-
-
 # Beast mode:
 # Does your code deal with capital letters? Update your solution so that
 # they will be downsized if they are input but HIDDEN remains capitalised.
 
-# first_input = "bob rob dob mob".split(" ")
-# second_input = "kob fob dob".split(" ")
+def grabinput # gets input in a "secure" way
+    puts "Please type some words."
+    input = gets.chomp.downcase
+    system("clear") # clear for "security" purposes
+    return input
+end
+
+def protect_vs_hackerman(first_input, second_input)
+    # Turn input strings into arrays so we can compare word by word.
+    first_input = first_input.downcase.split(" ")
+    second_input = second_input.downcase.split(" ")
+   
+    # Initialise empty array to be populated by first_input
+    output = []
+    
+    # Iterates over every word in first_input
+    for word in first_input
+        # If the word matches with one in second_input, append "HIDDEN" to the output.
+        if second_input.include? word
+            output << "HIDDEN"
+        # If no match, it just appends the word it's checking.
+        else
+            output << word
+        end
+    end
+    
+    # Turn the output back from an array to a string
+    return output.join(" ")
+end
 
 first_input = grabinput
 second_input = grabinput
 
-
-
-puts protect_vs_hackerman(first_input, second_input).join(" ")
+puts protect_vs_hackerman(first_input, second_input)
