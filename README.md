@@ -32,3 +32,7 @@
 * 14_hackerman
 * 15_change_letters
 * 16_palindrome
+<<<<<<< HEAD
+=======
+* 17_combine_hashes
+>>>>>>> bbfdad0511b40c0003dfc3256a1892fbc4555b44
