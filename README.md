@@ -34,12 +34,6 @@
 * 14_hackerman
 * 15_change_letters
 * 16_palindrome
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-* 17_combine_hashes
->>>>>>> bbfdad0511b40c0003dfc3256a1892fbc4555b44
-=======
 * 17_combine_hashes
 * 18_find_errors
->>>>>>> c158126e12d2f3261141962b0a82634e02468731
+* 19_balanced_number
