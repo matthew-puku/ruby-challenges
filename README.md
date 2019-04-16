@@ -47,3 +47,8 @@
 * 27_in_array_strict
 * 28_good_walk
 * 29_shortest_walk
+<<<<<<< HEAD
+=======
+* 30_spin_words
+* 31_missing_letter
+>>>>>>> f2b33863ae6fe937126f3c6091cac15beffa7874
