@@ -22,5 +22,3 @@ def group_by_owners(ungrouped_files)
   end
   files_grouped_by_owners
 end
-
-puts group_by_owners({'Input.txt' => 'Randy', 'Code.py' => 'Stan', 'Output.txt' => 'Randy'})

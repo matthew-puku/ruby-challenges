@@ -31,10 +31,10 @@ def interesting_number(number)
   return number_could_be_incrementing || number_could_be_decrementing
 end
 
-puts interesting_number(789) # => true
-puts interesting_number(321) # => true
-puts interesting_number(798) # => false
-puts interesting_number(6) # => false
-puts interesting_number(23) # => false
-puts interesting_number(7890) # => true
-puts interesting_number(3210) # => true
+# puts interesting_number(789) # => true
+# puts interesting_number(321) # => true
+# puts interesting_number(798) # => false
+# puts interesting_number(6) # => false
+# puts interesting_number(23) # => false
+# puts interesting_number(7890) # => true
+# puts interesting_number(3210) # => true
