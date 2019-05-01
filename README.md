@@ -56,3 +56,4 @@
 * 36_binary_flip
 * 37_caesar_cipher
 * 38_maze
+* 39_delete_over_nth
